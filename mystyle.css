@@ -59,19 +59,28 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 .logo a {
-  position: flex;
-  display: center;
+  position: relative;
+  display: block;
   width: 300px; /* 전체 너비 */
   height: 200px; /* 이미지 높이와 맞춤 */
 }
 
 .logo a img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100px;
   height: 200px;
 }
 
 .logo a span {
-  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 66%; /* 300px 중 이미지(100px) 제외한 가운데 */
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
   font-weight: bold;
   color: #333;
+  white-space: nowrap;
 }
