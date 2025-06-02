@@ -1,24 +1,11 @@
-.logo a {
-  position: relative;
-  display: block;
+logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo a img {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100px;
-  height: 200px;
-}
-
-.logo a span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.logo span {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
-  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
 }
