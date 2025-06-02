@@ -35,16 +35,10 @@
 <nav class="krds-gnb" id="krds-gnb">
 			<div class="inner">
 				<ul class="gnb-menu" aria-label="메인 메뉴" role="tablist">
-				<!-- 메뉴가 동적으로 여기에 생성됩니다. -->
-					<script>
-						function fn_menuLoading(){
-							alert("메뉴 로딩중입니다..");
-						}
-					</script>
-					<li role="none"><button type="button" onclick="fn_menuLoading();" class="gnb-main-trigger">레시피</button></li>
-					<li role="none"><button type="button" onclick="fn_menuLoading();" class="gnb-main-trigger">요리기초</button></li>
-					<li role="none"><button type="button" onclick="fn_menuLoading();" class="gnb-main-trigger">나의요리</button></li>
-					<li role="none"><button type="button" onclick="fn_menuLoading();" class="gnb-main-trigger">연락</button></li>
+					<li role="none"><a href="recipe.html" class="gnb-main-trigger">레시피</a></li>
+                                        <li role="none"><a href="basic-cooking.html" class="gnb-main-trigger">요리기초</a></li>
+                                        <li role="none"><a href="my-cooking.html" class="gnb-main-trigger">나의요리</a></li>
+                                        <li role="none"><a href="contact.html" class="gnb-main-trigger">연락</a></li>
 				</ul>
 			</div>
 </nav>
