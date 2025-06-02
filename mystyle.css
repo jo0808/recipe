@@ -79,7 +79,7 @@ li a:hover, .dropdown:hover .dropbtn {
   top: 50%;
   left: 66%; /* 300px 중 이미지(100px) 제외한 가운데 */
   transform: translate(-50%, -50%);
-  font-size: 1.5rem;
+  font-size: 40px;
   font-weight: bold;
   color: #333;
   white-space: nowrap;
