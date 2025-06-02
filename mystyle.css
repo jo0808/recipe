@@ -68,6 +68,8 @@ li a:hover, .dropdown:hover .dropbtn {
 .logo a img {
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100px;
   height: 200px;
 }
