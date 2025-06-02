@@ -68,18 +68,14 @@ li a:hover, .dropdown:hover .dropbtn {
 .logo a img {
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
   width: 100px;
   height: 200px;
 }
 
 .logo a span {
   position: absolute;
-  top: 50%;
-  left: 66%; /* 300px 중 이미지(100px) 제외한 가운데 */
-  transform: translate(-50%, -50%);
-  font-size: 40px;
+  text-align: center;
+  font-size: 60px;
   font-weight: bold;
   color: #333;
   white-space: nowrap;
