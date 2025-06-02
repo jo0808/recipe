@@ -57,3 +57,15 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block; 
 }
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
