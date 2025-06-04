@@ -97,7 +97,7 @@ html, body {
 }
 
 .bottom-section {
-  flex: 1; /* 하단 섹션이 사용 가능한 공간의 절반을 차지 */
+  min-height: 600px; /* 하단 섹션이 사용 가능한 공간의 절반을 차지 */
   display: flex;
   justify-content: center;
   align-items: center;
