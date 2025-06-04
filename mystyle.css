@@ -90,8 +90,9 @@ li a:hover, .dropdown:hover .dropbtn {
   }
 
   .image-row {
-    display: flex;
-    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
     justify-content: center;
     flex-wrap: wrap; /* 작은 화면에서도 줄바꿈 */
   }
