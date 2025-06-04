@@ -89,19 +89,20 @@ li a:hover, .dropdown:hover .dropbtn {
     gap: 30px;
   }
 
-  .image-row {
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
-    justify-content: center;
-    flex-wrap: wrap; /* 작은 화면에서도 줄바꿈 */
-  }
+image-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .image-row img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 8px;
-  }
+.resized-img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 3; /* 일정한 비율 유지 */
+  object-fit: cover;   /* 넘치는 부분은 잘라냄 */
+  border-radius: 8px;
+}
 
   .content-wrapper iframe {
     width: 100%;
