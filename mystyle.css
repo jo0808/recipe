@@ -9,84 +9,71 @@ html, body {
   height: 100%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: visible;
+/* 기존 내비게이션 바 스타일 (ul 대신 nav 태그의 .krds-gnb 클래스를 사용) */
+.krds-gnb {
   background-color: #333;
   position: sticky;
   top: 0;
+  z-index: 1000; /* 다른 요소 위에 오도록 z-index 설정 */
 }
 
-li {
-  display: inline-block;
+.krds-gnb .inner {
+    display: flex;
+    justify-content: center; /* 메뉴를 중앙 정렬 */
+    padding: 0; /* 패딩 제거 */
 }
 
-li a,
-.dropbtn {
-  display: inline-block;
+.krds-gnb ul.gnb-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* float 해제 */
+}
+
+.krds-gnb ul.gnb-menu li {
+  display: inline-block; /* 메뉴 항목들을 가로로 나열 */
+}
+
+.krds-gnb ul.gnb-menu li a {
+  display: block;
   padding: 14px 16px;
   color: white;
   text-align: center;
   text-decoration: none;
 }
 
-li a:hover,
-.dropdown:hover .dropbtn {
+.krds-gnb ul.gnb-menu li a:hover {
   background-color: red;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.logo a {
+/* 기존 로고 스타일 (header 내의 .logo 클래스) */
+#header .logo a {
   display: flex;
   align-items: center;
-  width: 300px;
-  height: 200px;
+  /* width, height는 이미지와 텍스트에 맞춰 조정 */
   text-decoration: none;
+  padding: 10px; /* 로고 주변 패딩 추가 */
 }
 
-.logo a img {
-  width: 100px;
-  height: 200px;
+#header .logo a img {
+  width: 80px; /* 로고 이미지 크기 조정 */
+  height: 80px; /* 로고 이미지 크기 조정 */
+  object-fit: contain;
+  margin-right: 10px;
 }
 
-.logo a span {
-  flex: 1;
-  text-align: center;
-  font-size: 60px;
+#header .logo a span {
+  font-size: 40px; /* 로고 텍스트 크기 조정 */
   font-weight: bold;
   color: #333;
   white-space: nowrap;
 }
 
-/* 웹사이트를 세로로 절반 나누고, 위는 사진 2개, 아래는 동영상 */
+/* header와 nav의 높이를 합산하여 main content 영역의 높이를 계산 */
+/* 실제 header와 nav의 높이를 측정하여 여기에 넣어야 합니다. */
+/* 예시: header 높이 100px, nav 높이 50px 가정 -> 총 150px */
 .vertical-container {
-  height: calc(100vh - 51px); /* 네비게이션 바 높이(대략 51px)를 제외한 전체 화면 높이 */
+  height: calc(100vh - 150px); /* 실제 헤더+네비게이션 바 높이로 조정 */
   display: flex;
   flex-direction: column;
 }
