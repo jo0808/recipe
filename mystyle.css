@@ -135,6 +135,18 @@ html, body {
     margin-bottom: 20px; /* 각 아이템 아래 여백 */
 }
 
+.gallery1-item {
+    display: flex;
+    flex-direction: column; /* 이미지와 캡션을 세로로 배치 */
+    align-items: center; /* 이미지와 텍스트를 가로축에서 중앙에 정렬 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    width: calc(50% - 20px); /* 한 줄에 2개씩 배치 (간격 고려) */
+    /* 또는 고정 너비로 설정 (예: 300px) */
+    /* width: 300px; */
+    box-sizing: border-box; /* 패딩과 보더가 너비에 포함되도록 */
+    margin-bottom: 20px; /* 각 아이템 아래 여백 */
+}
+
 .recipe-image {
     max-width: 100%; /* 부모 컨테이너(gallery-item) 너비에 맞춰 이미지 크기 조절 */
     height: auto; /* 비율 유지 */
